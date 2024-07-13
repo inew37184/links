@@ -133,7 +133,7 @@ effortlessly integrated into your website through our embed links, API
 				input.addEventListener('change', () => {
 					let base = 'https://antos305vio.com/play', type = inputs.getAttribute('type');
 					if (type == 'movie') embed.value = `${base}/${tmdb.value}`;
-					else embed.value = `${base}/${type}/${tmdb.value}`;
+					else embed.value = `${base}/${tmdb.value}`;
 					return $('iframe').src = embed.value;
 				});
 			});
