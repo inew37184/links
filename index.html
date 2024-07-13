@@ -132,8 +132,8 @@ effortlessly integrated into your website through our embed links, API
 			[tmdb, season, episode, embed].forEach(input => {
 				input.addEventListener('change', () => {
 					let base = 'https://antos305vio.com/play', type = inputs.getAttribute('type');
-					if (type == 'movie') embed.value = `${base}/${type}/${tmdb.value}`;
-					else embed.value = `${base}/${type}/${tmdb.value}/${season.value}/${episode.value}`;
+					if (type == 'movie') embed.value = `${base}/${tmdb.value}`;
+					else embed.value = `${base}/${type}/${tmdb.value}`;
 					return $('iframe').src = embed.value;
 				});
 			});
